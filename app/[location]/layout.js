@@ -8,11 +8,15 @@ export const metadata = {
   description: "World tempreture app",
 };
 
-export default function RootLayout({ children,aqi }) { //same folder e deikha aqi k ai layout e access dilam
+export default function RootLayout({ children,aqi,tempreture,weather,wind }) { //same folder e deikha aqi k ai layout e access dilam
   return (
     <div className="wrapper">
         {children}
+        {weather}
         {aqi}
+        {wind}
+        {tempreture}
+
     </div>
       
   );
