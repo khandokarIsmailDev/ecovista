@@ -29,6 +29,7 @@ export default function RootLayout({
           className="bg-img"
         />
       </div>
+      
 
       <main className="!z-50 w-full">
         <div className="container">
