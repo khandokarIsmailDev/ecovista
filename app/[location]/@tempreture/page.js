@@ -1,11 +1,11 @@
 import React from 'react';
 
-const Default = () => {
+const page = () => {
     return (
         <div>
-            Default Page
+            Tempreture page
         </div>
     );
 };
 
-export default Default;
+export default page;
