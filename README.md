@@ -10,6 +10,8 @@
 
 - latitude and longitude pabo
 - Weather data ai api theke pabo
+- https://openweathermap.org/current
+- https://openweathermap.org/api/air-pollution
 
 # Bigdataclould
 
