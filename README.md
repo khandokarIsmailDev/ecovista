@@ -16,6 +16,7 @@
 # Bigdataclould
 
 - latitude an longitude dile aita kon jayger api tar sob info ai era provide kore
+- https://www.bigdatacloud.com/free-api/free-reverse-geocode-to-city-api
 
 # Manual API
 
