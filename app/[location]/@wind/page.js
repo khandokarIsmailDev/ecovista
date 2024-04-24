@@ -1,10 +1,9 @@
+import WindComponent from '@/components/WindComponent';
 import React from 'react';
 
-const page = () => {
+const page = ({params:{location},searchParams:{latitude,longitude}}) => {
     return (
-        <div>
-            wind page
-        </div>
+        <WindComponent lat={latitude} lon={longitude} />
     );
 };
 
