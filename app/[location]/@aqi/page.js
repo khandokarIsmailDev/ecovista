@@ -1,10 +1,11 @@
 import React from 'react';
+import AQIComponents from '@/components/AQIComponents';
 
-const page = () => {
+const page = ({params:{location},searchParams:{latitude,longitude}}) => {
     return (
-        <div>
-            Aqi
-        </div>
+        
+            <AQIComponents lat={latitude} lon={longitude} />
+        
     );
 };
 
