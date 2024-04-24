@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const WindComponent = async ({ lat, lon }) => {
   const { speed, deg } = await getWinData(lat, lon);
-  console.log(speed, deg);
+  // console.log(speed, deg);
   return (
     <Card>
       <div>

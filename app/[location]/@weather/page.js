@@ -1,10 +1,9 @@
+import WeatherComponent from '@/components/WeatherComponent';
 import React from 'react';
 
-const page = () => {
+const page = ({params:{location},searchParams:{latitude,longitude}}) => {
     return (
-        <div>
-            weather page
-        </div>
+        <WeatherComponent lat={latitude} lon={longitude} />
     );
 };
 

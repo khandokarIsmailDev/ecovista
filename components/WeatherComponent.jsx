@@ -1,8 +1,11 @@
 import React from "react";
 import Card from "./Card";
 import Image from "next/image";
+import { weatherData } from "@/lib/weather-info";
 
-const WeatherComponent = ({lat,lon}) => {
+const WeatherComponent =async ({lat,lon}) => {
+    const {main,description }= await weatherData(lat,lon) 
+    console.log(main,description)
   return (
     <Card>
       <h6 className="feature-name">Current Weather</h6>
@@ -14,8 +17,8 @@ const WeatherComponent = ({lat,lon}) => {
           width={500}
           height={500}
         />
-        <h3 className="feature-title">Rain</h3>
-        <span className="feature-name">Moderate Rain</span>
+        <h3 className="feature-title">{main}</h3>
+        <span className="feature-name"> {description}</span>
       </div>
     </Card>
   );
