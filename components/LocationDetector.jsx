@@ -25,6 +25,8 @@ const LocationDetector = () => {
                 params.set('latitude',position.coords.latitude)
                 params.set('longitude',position.coords.longitude)
                 setLoading(false)
+                //redirect korbo /current?latitude=234&lognitude=343
+                router.push(`/current?${params.toString( )}`)
             })
         }
 
