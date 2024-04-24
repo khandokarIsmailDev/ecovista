@@ -5,7 +5,7 @@ import { weatherData } from "@/lib/weather-info";
 
 const WeatherComponent =async ({lat,lon}) => {
     const {main,description }= await weatherData(lat,lon) 
-    console.log(main,description)
+    // console.log(main,description)
   return (
     <Card>
       <h6 className="feature-name">Current Weather</h6>

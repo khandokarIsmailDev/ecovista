@@ -5,7 +5,7 @@ import Image from 'next/image'
 
 const TempretureComponents = async({lat,lon}) => {
     const {temp,feels_like} = await getTempretureData(lat,lon)
-    console.log(temp,feels_like)
+    // console.log(temp,feels_like)
 
     return (
         <Card>
