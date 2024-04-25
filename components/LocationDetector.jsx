@@ -1,8 +1,9 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, Suspense } from "react";
 import { useSearchParams, usePathname, useRouter } from "next/navigation";
 import Image from "next/image";
+
 
 const LocationDetector = () => {
   //firts we handle loading
@@ -29,10 +30,11 @@ const LocationDetector = () => {
         router.push(`/current?${params.toString()}`);
       });
     }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [pathName, searchParams]);
 
   return (
-    <div className=" flex flex-col justify-center items-center h-screen bg-slate-700 text-white">
+      <div className=" flex flex-col justify-center items-center h-screen bg-slate-700 text-white">
       {loading && (
         <>
           <Image
@@ -46,6 +48,7 @@ const LocationDetector = () => {
         </>
       )}
     </div>
+
   );
 };
 
